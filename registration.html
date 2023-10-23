@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Dang Nam Khanh">
+    <meta name="keyword" content="registration">
+    <meta name="description" content="Assignment 2">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/styles.css">
+    <script src="js/validation.js"></script>
+	<title>Registration</title>
+</head>
+<body>
+    <!-- header navigation bar on all pages -->
+	<header>
+		<h1>Sweet Life</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">About Us</a></li>
+				<li class="active"><a href="registration.html">Registration</a></li>
+				<li><a href="order.html">Order</a></li>
+				<li><a href="features.html">Features</a></li>
+
+			</ul>
+		</nav>
+	</header>
+    <main>
+        <!-- Registration form  -->
+        <form action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="post" id="firstform">
+            <h1>User Registration Form</h1>
+
+            <!-- Username and password  -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" ><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" ><br><br>
+            
+            <!-- Gender selection  -->
+            <p>gender</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+            
+            <!-- Email  -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" ><br><br>
+            
+            <!-- Product selection  -->
+            <div id="icetypes">
+                <label>Favorite Ice Cream:</label><br>
+                <input type="checkbox" id="sherbet" name="ice1" value="sherbet">
+                <label for="sherbet">Sherbet</label><br>
+                <input type="checkbox" id="kulfi" name="ice2" value="kulfi">
+                <label for="kulfi">Kulfi</label><br>
+                <input type="checkbox" id="snowcream" name="ice3" value="snowcream">
+                <label for="snowcream">Snow Cream</label>
+            </div>
+            
+            
+            <br><br>
+            <!-- Rating  -->
+            <label for="rating">How would you rate my ice cream shop?</label>
+            <select id="rating" name="rating">
+                <option value="none">--- Please select your rating (1-5) ---</option>
+                <option value="rating_1">1</option>
+                <option value="rating_2">2</option>
+                <option value="rating_3">3</option>
+                <option value="rating_4">4</option>
+                <option value="rating_5">5</option>
+            </select><br><br>
+            
+            <!-- This part is optional, this input is not required  -->
+            <label for="newsletter">Subscribe to our Newsletter(Optional): </label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes"><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+
+    </main>
+
+    <footer>
+		<p>Copyright &copy; Sweet Life 2023</p>		
+	</footer>
+    
+
+</body>
+</html>

@@ -1,0 +1,492 @@
+/* Global styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background: linear-gradient(pink, pink, orange, yellow);
+
+}
+
+/* Header */
+a {
+	color: #0088cc;
+	text-decoration: none;
+	margin: 0px 3px;
+}
+
+ul {
+	list-style: none;
+}	
+
+
+.active a,
+.active a:hover {
+    color: rgb(255, 230, 234);
+}
+header {
+	background-color: #fff;
+	box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+header h1 {
+	margin: 0;
+	padding: 20px;
+	font-size: 32px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #333;
+}
+
+header nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-color: rgba(218, 25, 0, 0.719);
+	height: 55px;
+
+}
+
+header nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav li {
+	margin: 0 10px;
+}
+
+header nav a {
+	font-size: 18px;
+	transition: 0.3s;
+	color: black;
+}
+
+header nav a:hover {
+	text-shadow: 2px 2px 2px rgba(66, 66, 66, 0.596);
+	font-size: 19px;
+	line-height: 0px;
+}
+
+/* index's introduction part */
+
+.wellcomepage{
+	width: 100%;
+	height: 90vh;
+	background-image: url("../images/introbackground.jpg"); 
+	/* image source: https://unsplash.com/photos/OlQ-NaEyVmQ */
+	background-position: center;
+	
+
+}
+
+.wellcomepage .contentintro{
+	position: relative;
+	transform: translateY(-50%);
+	text-align: center;
+    top: 50%;
+    height: 300px;
+	color: yellow;
+	font-size: 1.4em;
+}
+
+.contentintro h1{
+	font-family: cursive, Times, serif;
+	text-shadow: 2px 2px 20px black;
+}
+
+
+/* index's <p> hover animation  */
+#hero p{
+	transition: .4s;
+	/* color: white; */
+}
+
+#hero p:hover{
+	transform: translateY(-5px);
+
+
+}
+#about p{
+	transition: .4s;
+	/* color: white; */
+}
+
+#about p:hover{
+	transform: translateY(-9px);
+}
+
+
+/* Main content */
+main {
+	padding: 50px 0;
+	max-width: 80%;
+	margin: 0 auto;
+	/* height: 100vh; */
+
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+section h2 {
+	margin-bottom: 20px;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+}
+
+section p {
+	margin-bottom: 20px;
+	font-size: 16px;
+	text-align: justify;
+}
+
+section ul {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+section li {
+	width: 300px;
+	margin: 0 20px 20px 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	transition: transform 0.3s ease;
+}
+
+/* Footer */
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	bottom: 0;
+}
+
+/* index' content  */
+#menu h3 {
+	text-align: center;
+	background: rgb(255, 174, 174);
+	;
+	line-height: 40px;
+}
+
+#menu p {
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: auto;
+	margin: 0 auto;
+}
+
+.card {
+	width: 300px;
+	height: 600px;
+	margin: 30px;
+	border: 2px solid brown;
+	border-radius: 10px;
+	transition: .3s;
+	box-shadow: 0px 0px 7px rgb(80, 80, 80);
+	background: rgb(184, 0, 0);
+	overflow: hidden;
+
+}
+
+.card:hover {
+	transform: scale(1.03);
+	box-shadow: 0px 0px 15px rgb(80, 80, 80);
+
+}
+
+.card img {
+	width: 100%;
+	max-height: 100%;
+	height: 400px;
+	/* object-fit: cover; */
+}
+
+.card p {
+	padding: 10px;
+	color: wheat;
+}
+
+.shopphotos {
+	display: flex;
+	justify-content: center;
+
+}
+
+.shopphotos img {
+	width: 40%;
+	height: auto;
+	margin: 20px;
+	border: 8px brown solid;
+	border-style: double;
+}
+
+#location p {
+	text-align: center;
+}
+
+/* responsive website  */
+@media(max-width: 1000px) {
+	.shopphotos {
+		flex-wrap: wrap;
+	}
+
+	.shopphotos img {
+		width: 90%;
+		min-width: 280px;
+		margin: 10px;
+	}
+
+
+}
+
+@media(max-width: 700px) {
+	main {
+		margin: 0 10px 0 10px;
+		padding: 20px 5px;
+		max-width: 100%;
+	}
+
+	.card {
+		margin: 20px 3px;
+	}
+}
+
+
+/* registration form  */
+#firstform {
+	border: 1px solid #ccc;
+	padding: 20px;
+	max-width: 600px;
+	width: 100%;
+	background: linear-gradient(red, blue, green);
+	border-radius: 15px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+	transition: .3s;
+
+}
+
+/* Heading styles */
+#firstform h1 {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	color: yellow;
+}
+
+/* Label styles */
+#firstform label {
+	/* display: block; */
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: white;
+}
+
+#firstform p {
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: white;
+	text-transform: capitalize;
+	margin: 0;
+}
+
+/* Input styles */
+#firstform input[type="text"],
+#firstform input[type="email"],
+#firstform input[type="password"],
+#firstform select {
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	margin-bottom: 1rem;
+	margin-top: 5px;
+	box-sizing: border-box;
+
+}
+
+/* Radio button and checkbox styles */
+#firstform input[type="radio"],
+#firstform input[type="checkbox"] {
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+/* Submit button styles */
+#firstform input[type="submit"] {
+	background-color: #ad0000;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 1rem;
+	transition: all .4s;
+}
+
+#firstform input[type="submit"]:hover {
+	background-color: rgb(255, 0, 0);
+	box-shadow: 0px 0px 10px black;
+}
+
+
+/* order form  */
+/* Center the form */
+#secondform {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px auto;
+	max-width: 600px;
+	padding: 15px;
+}
+
+/* Style the form header */
+#secondform h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+/* Style the form labels */
+#secondform label {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+	/* display: block; */
+	text-align: left;
+	width: 100%;
+	cursor: pointer;
+}
+
+/* Style the form inputs */
+#secondform input[type="text"],
+#secondform input[type="email"],
+#secondform input[type="tel"],
+#secondform select {
+	font-size: 1rem;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.5);
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+#secondform input[type="checkbox"]{
+	display: inline-block;
+}
+
+
+/* Style the submit button */
+#secondform button[type="submit"] {
+	background-color: #FF6700;
+	color: #fff;
+	font-size: 1.2rem;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin-top: 20px;
+	transition: background-color 0.2s ease;
+	cursor: pointer;
+	transition: .4s;
+}
+
+#secondform button[type="submit"]:hover {
+	background-color: blue;
+	box-shadow: 0px 0px 10px black;
+}
+
+/* Disable delivery address and credit card input fields by default */
+#delivery-address,
+#credit-card-info {
+	display: block;
+}
+
+/* Show delivery address input field if delivery option is selected */
+#delivery-option[value="delivery"]:checked~#delivery-address {
+	display: block;
+}
+
+/* Show credit card input field if pay online option is selected */
+#pay-option[value="online"]:checked~#credit-card-info {
+	display: block;
+}
+
+
+/* features website  */
+#features{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(-50px);
+}
+
+#features div{
+	background: linear-gradient(rgb(11,36,71), rgb(25,55,109), rgb(87,108,188));
+	width: fit-content;
+	height: fit-content;
+	padding: 10px;
+	border-radius: 13px;
+}
+
+#features_content ol{
+	list-style-position: inside;
+	color: white;
+	
+}
+
+#features_content ol a{
+	color: rgb(255, 132, 0);
+}
+
+#features h1{
+	text-align: center;
+	margin: 10px;
+	color: yellow;
+}
+
+
+/* responsive header navigation bar  */
+@media(max-width: 400px){
+	header nav a {
+		font-size: 14px;
+	}
+
+	header nav li{
+		margin: 0px 7px;
+	}
+
+	header nav {
+		overflow: hidden;
+	}
+}

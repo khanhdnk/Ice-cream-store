@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Dang Nam Khanh">
+	<meta name="keyword" content= "order">
+	<meta name="description" content="Assignment 2">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/styles.css">
+	<script src="js/validation.js"></script>
+
+	<title>Order</title>
+</head>
+<body>
+	<!-- header navigation bar on all pages -->
+	<header>
+		<h1>Sweet Life</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">About Us</a></li>
+				<li><a href="registration.html">Registration</a></li>
+				<li class="active"><a href="order.html">Order</a></li>
+				<li><a href="features.html">Features</a></li>
+
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<!-- Order form  -->
+		<form action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="POST" id="secondform">
+		<h2>Place your order:</h2>
+		<label for="delivery-option">Delivery or Pickup:</label>
+		<select name="delivery-option" id="delivery-option" >
+			<option value="none">-- Select One --</option>
+			<option value="delivery">Delivery</option>
+			<option value="pickup">Pickup</option>
+		</select>
+		
+		<label for="delivery-address">Delivery Address:</label>
+		<input type="text" name="delivery-address" id="delivery-address" placeholder="Enter delivery address" disabled >
+
+		<label for="billing-address">Billing Address:</label>
+		<input type="text" name="billing-address" id="billing-address" placeholder="Enter billing address" value="">
+		
+		
+		<label for="sameas">Same as delivery address:
+		<input type="checkbox" name="sameas" id="sameas" disabled></label>
+		
+		<label for="contact-number">Contact Number:</label>
+		<input type="tel" name="contact-number" id="contact-number" placeholder="Enter contact number" >
+		
+		<label for="email-receipt">Email for Receipt:</label>
+		<input type="email" name="email-receipt" id="email-receipt" placeholder="Enter email" >
+		
+		<label for="pay-option">Pay on Pickup or Online:</label>
+		<select name="pay-option" id="pay-option" >
+			<option value="none">-- Select One --</option>
+			<option value="pickup">Pay on Pickup</option>
+			<option value="online">Pay Online</option>
+		</select>
+
+		<label for="credittypes">Choose your types of credit cards:</label>
+		<select name="credittypes" id="credittypes" disabled>
+			<option value="none">-- Please select --</option>
+			<option value="visa">Visa</option>
+			<option value="mastercard">Master Card</option>
+			<option value="american_express">American Express</option>
+		</select>
+		
+		<label for="credit-card-info">Credit Card Information:</label>
+		<input type="text" name="credit-card-info" id="credit-card-info" placeholder="Enter credit card information" disabled>
+
+		<label for="postcode">Postcode:</label>
+		<input type="text" name="postcode" id="postcode" placeholder="Please enter 4 digits">
+		
+		<button type="submit">Submit Order</button>
+		</form>
+	</main>
+	
+
+	<footer>
+		<p>Copyright &copy; Sweet Life 2023</p>
+
+	</footer>
+			
+</body>
+</html>
